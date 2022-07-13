@@ -1,0 +1,338 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 1440px;
+}
+
+div#menu {
+    height: 25px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 0px 0px 5px 5px;
+    user-select: none;
+}
+
+div#menu span#name {
+    position:  absolute;
+    top: -7px;
+    left: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div#menu span#feddit {
+    position: absolute;
+    background-color: orangered;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    left: 101px;
+    top: 0px;
+    height: 25px;
+    padding-left: 4px;
+    padding-right: 20px;
+}
+
+div#menu span#subreddits {
+    position: absolute;
+    top: -14px;
+    left: 190px;
+}
+div#menu span#subreddits ul {
+    float: left;
+    list-style: none;
+}
+div#menu span#subreddits li {
+    float: left;
+    list-style: none;
+    padding-right: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 200;
+}
+div#menu span#subreddits li.seperator {
+    color: #grey;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+div#intro {
+    width: 491px;
+    height: 810px;
+    left: 263px;
+    top: 58px;
+}
+
+div#intro div#banner {
+    position: absolute;
+    top: 18px;
+    left: 295px;
+}
+
+div#intro div#banner ul {
+    float: left;
+    list-style: none;
+}
+
+div#intro div#banner li {
+    float: left;
+    list-style: none;
+}
+
+div#intro div#banner img {
+    width: 110px;
+}
+
+div#intro h1 {
+    width: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+span.highlighted {
+    color: #7c7c7c;
+    font-size: 16px;
+}
+
+div#intro p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+span.yona {
+    color: #374DC1;
+}
+
+div#intro p span#cbc {
+    color: #F32F2F;
+}
+
+div#secret {
+    position: absolute;
+    width: 465px;
+    height: 20px;
+    top: 60px;
+    right: 111px;
+    color: rgba(0,0,0,0.01);
+}
+
+div#minter {
+    position: absolute;
+    width: 674px;
+    height: 431px;
+    left: 750px;
+    top: 200px;
+
+    background-image: url("../images/soybg.png");
+    background-size: 25%;
+    /*background: linear-gradient(180deg, #C5C5C5 0%, rgba(197, 197, 197, 0) 100%);*/
+    border-radius: 64px;
+	animation: shake-bg 10s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes shake-bg {
+    0%{
+        background-position: 0px;
+    }
+    50%{
+        background-position: -100px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+div#minter.minting {
+	animation: shake-bg 0.1s linear;
+}
+
+div#minter span#connect {
+    position:  absolute;
+    right: 55px;
+    background-color: #fff;
+}
+
+div#minter h1 {
+    position: absolute;
+    left: 200px;
+    top: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+    background-color: #fff;
+}
+
+div#minter span#number {
+    font-size: 42px;
+    font-style: italic;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 243px;
+    width: 204px;
+    bottom: 122px;
+    text-align: center;
+}
+
+div#minter span#prices {
+    position: absolute;
+    left: 260px;
+    top: 95px;
+    background-color: #fff;
+}
+
+div#minter span#sold {
+    position: absolute;
+    left: 305px;
+    bottom: 185px;
+    background-color: #fff;
+}
+
+div#minter ul {
+    position: absolute;
+    left: 245px;
+    top: 100px;
+    list-style-type: katakana;
+    background-color: #fff;
+}
+
+div#minter .addr {
+    position: absolute;
+    left: 210px;
+    top: 265px;
+
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 72%;
+    width: 30px;
+    height: 30px;
+    border: 2px #fff solid;
+    cursor:  pointer;
+}
+
+div#minter button#plus {
+    left: 450px;
+}
+
+div#minter button#mint-button {
+    position: absolute;
+    width: 402px;
+    height: 60px;
+    left: 150px;
+    top: 320px;
+
+    background: #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+    cursor: pointer;
+}
+
+div#minter button:hover {
+	animation: rainbow 1s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes rainbow{
+	100%,0%{
+		color: rgb(131,171,254);
+        text-shadow: 2px 2px rgb(255,160,191);
+	}
+	20%{
+		color: rgb(174,254,136);
+        text-shadow: 2px 2px rgb(253,200,147);
+	}
+	40%{
+		color: rgb(255,254,135);
+        text-shadow: 2px 2px rgb(255,254,135);
+	}
+	60%{
+		color: rgb(253,200,147);
+        text-shadow: 2px 2px rgb(174,254,136);
+	}
+	80%{
+		color: rgb(255,160,191);
+        text-shadow: 2px 2px rgb(131,171,254);
+	}
+}
+
+div#links {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+div#links a {
+    padding: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+div#links a:hover {
+    color: #fff;
+    animation: rainbow-bg 5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg {
+	100%,0%{
+		background-color: rgb(131,171,254);
+        text-shadow: 2px 2px rgb(255,160,191);
+	}
+	20%{
+		background-color: rgb(174,254,136);
+        text-shadow: 2px 2px rgb(253,200,147);
+	}
+	40%{
+		background-color: rgb(255,254,135);
+        text-shadow: 2px 2px rgb(255,254,135);
+	}
+	60%{
+		background-color: rgb(253,200,147);
+        text-shadow: 2px 2px rgb(174,254,136);
+	}
+	80%{
+		background-color: rgb(255,160,191);
+        text-shadow: 2px 2px rgb(131,171,254);
+	}
+}
+
